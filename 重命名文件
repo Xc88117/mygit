@@ -1,0 +1,12 @@
+public class Rename {
+	static public void nameFolder(String oldName, String newName){
+		File file1 = new File(oldName);
+		File file2 = new File(newName);
+		file1.renameTo(file2);
+	}
+	public static void main(String[] args) {
+		String oldName = "F:/xxx";
+		String newName = "F:/yyy";
+		Rename.nameFolder(oldName, newName);
+	}
+}
